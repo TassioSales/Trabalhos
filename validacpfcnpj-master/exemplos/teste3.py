@@ -9,7 +9,7 @@ import validacpfcnpj
 
 cpf_cnpj = validacpfcnpj.ValidaCpfCnpj()
 
-arquivo = open("estagiario.txt", "r")
+arquivo = open("estagiario.txt", "r", enconding = "utf-8")
 for item in arquivo:
     cpf_cnpj.cpf_cnpj = item
     if len(cpf_cnpj.cpf_cnpj) >= 14:
